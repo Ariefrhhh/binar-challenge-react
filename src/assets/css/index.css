@@ -1,0 +1,389 @@
+.backDrop{
+  width: 100%;
+  background: #00000099;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #00000087;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  transition: margin-left 0.5s;
+  z-index: 1;
+}
+
+.side-nav-bar {
+  background: white;
+  max-width: 250px;
+  width: 100%;
+  padding: 24px;
+}
+.side-nav-bar-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+
+.parent {background-color: #F1F3FF;}
+  
+.title-header{
+      width: 100px; 
+      height: 34px; 
+      background-color: blue;
+  }
+
+.hero{
+      background-color: #F1F3FF;
+  }
+
+.hero2 {
+background-color:white;
+padding-left: 10rem;
+padding-right: 10rem;
+gap: 4rem;
+padding-top: 4rem;
+}
+
+.custom-button{
+background-color: #5CB85F;  
+padding: 8px 12px;
+border-radius: 2px;
+color: #ffff;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.custom-button{
+background-color: #5CB85F;  
+padding: 8px 12px;
+border-radius: 2px;
+color: #ffff;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.card-body1 {
+margin: 30px 60px 30px 60px;
+font-weight: 700;
+}
+
+.card-title1{
+line-height: 24px;
+font-size: 16px;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.card-paragraph1{
+line-height: 20px;
+font-size: 14px;
+font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* .card-container1{
+margin: 0px 60px 0px 60px ;
+} */
+
+.card-body2{
+padding: 30px 60px 30px 60px ;
+}
+
+
+.title-sewamobil h1 {
+font-weight: 700;
+font-size: 36px;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.Button{
+background-color: #5CB85F;  
+padding: 8px 12px;
+border-radius: 2px;
+color: #ffff;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.title-sewamobil { 
+background-color: #0D28A6;
+color: white;
+border-radius: 16px;
+width: 80%;
+padding: 100px;
+}
+
+.border-faq {
+  border: 1px solid #d4d4d4;
+} 
+
+.FAQ-text h1 {
+font-size: 24px;
+line-height: 36px;
+font-weight: 700;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.FAQ-text p {
+font-size: 14px;
+line-height: 26px;
+font-weight: 700;
+font-family:Arial, Helvetica, sans-serif
+}
+
+/* .FAQ-ROW {
+  margin-left: 125px ;
+} */
+
+.FAQ-ROW button{
+
+background-color: white;
+border: 1px solid #D4D4D4;
+color: black;
+width: 35rem;
+margin-left: 30px;
+margin-top: 16px;
+text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+}
+
+.FAQ-ROW span {
+white-space: break-spaces;
+}
+
+.search-car {
+  height: 300px;
+  background: #F1F3FF;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+
+.hero{
+flex-direction: column
+}
+
+.hero2 {
+flex-direction: column;
+}
+.card-container1{
+flex-direction: column;
+}
+
+
+.card-body1{
+width: auto;
+}
+
+.img-fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-body2{
+flex-direction: column;
+}
+
+.card-testimonial-text{
+text-align: center;
+}
+
+.card-testimonial{
+  display: flex;
+  flex-direction: column;
+}
+
+.FAQ-container {
+flex-direction: column;
+}
+
+.FAQ-text{
+text-align: center;
+margin-top: 10px;
+}
+
+.FAQ-ROW button{
+width: 28rem;
+padding-right: 20px;
+}
+
+.FAQ-row {
+margin-top: -90px
+}
+
+.FAQ-ROW span {
+white-space: break-spaces;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+.FAQ-container {
+flex-direction: column;
+}
+
+.FAQ-text{
+text-align: center;
+margin-top: 10px;
+}
+
+.FAQ-ROW button{
+width: 28rem;
+padding-right: 20px;
+}
+
+.hero{
+flex-direction: column;
+}
+
+.hero2{
+flex-direction: column;
+flex-wrap: wrap-reverse
+}
+
+.card-testimonial{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  flex-direction: column;
+}
+}
+
+
+.w-straight-faq {
+  max-width: 661px;
+  width: 100%;
+}
+
+.list-car {
+  height: 478px;
+  width: 333px;
+  margin-top: 120px;
+  
+}
+
+.contains-box {
+  margin-top: -1rem;
+  padding-right: 13rem;
+  padding-left: 12rem;
+}
+
+
+.contains-car {
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.img-contain {
+  max-width: 100%;
+}
+
+.card-image-car {
+  height:200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.car-desc{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.card-content-desc {
+  padding: 20px;
+}
+
+.card-row{
+position: relative;
+top: -7rem;
+left: 0.5rem;
+}
+
+
+.list-form {
+  padding: 1rem;
+  width: 100%;
+  height: 106px;
+  background: white;
+  border: 1px solid #d8d8d8;
+  margin-bottom: -50px;
+  border-radius: 14px;
+  position: relative;
+  z-index: 10000000;
+}
+
+.list-form-detail {
+  padding: 1rem;
+  width: 68rem;
+  height: 106px;
+  background: white;
+  border: 1px solid #d8d8d8;
+  margin-bottom: -50px;
+  border-radius: 14px;
+  position: relative;
+  z-index: 10000000;
+  top:25rem;
+}
+
+.contains-box-detail {
+  position: relative;
+  top: -15rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.img-contain-detail{
+    width: 100%;
+    height: auto;
+    padding: 24px;
+}
+
+.contains-car-detail {
+  position: relative;
+  top: -11rem;
+}
+
+.card-text-detail {
+  padding: 24px;
+}
