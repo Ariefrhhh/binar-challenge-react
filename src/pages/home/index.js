@@ -28,6 +28,7 @@ Tangerang bersama Binar Car Rental jaminan harga lebih murah
 dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan 
 terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
                 <ul>
+                  
                     <li>Sewa Mobil Dengan Supir di Bali 12 Jam</li>
                     <li>Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
                     <li>Sewa Mobil Jangka Panjang Bulanan</li>
