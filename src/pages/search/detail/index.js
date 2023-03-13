@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from "react";
-import { Row,Col } from "react-bootstrap";
+import { Row,Col,Spinner } from "react-bootstrap";
 import Input from '../../../component/input';
 import SelectBox from '../../../component/Selectbox';
 // import Button from '../../../component/button';
@@ -9,13 +9,22 @@ import { useParams } from "react-router-dom";
 
 const DetailCar = (props) => {
 
+    const carSize = {
+        small: "2 - 4 Orang",
+        medium: "4 - 6 Orang",
+        large: "6 - 8 Orang"
+    }
+    
 
     const [data, setData] = useState(null)
     const{id} = useParams()
+    const [loader, setloader] = useState("idle")
 
     const fetchingMobil = useCallback((params=null) => {
+        setloader ("fetching")
         fetchApi(`https://bootcamp-rent-cars.herokuapp.com/customer/car/${id}`, params).then(result => {
             setData(result.data)
+            setloader ("resolve")
         //    setData(result.data.cars)
         })
     },[id])
@@ -63,6 +72,8 @@ const DetailCar = (props) => {
                         </Segment>
                 </Segment>
                 </Segment>
+                {loader !== "resolve" && <Segment className="text-center loader"><Spinner size="md" color='success'></Spinner></Segment>}
+                {loader === "resolve" &&
                 <Segment className="contains-box-detail contains-car-detail">
                 <Row>
                      <Col md={7} >
@@ -103,7 +114,7 @@ const DetailCar = (props) => {
                             <Segment className="card-text-detail">
                                 <Segment className="py-1" style={{ fontSize: "14px", fontWeight: 700 }}>{data?.name}</Segment>
                                 <Segment className="py-1" style={{ fontSize: "10px", color: "#8A8A8A" }}>
-                                    <i className='fa fa-users'></i> {[data?.category]}
+                                    <i className='fa fa-users'></i> {carSize[data?.category]}
                                 </Segment>
                                 <Segment className="d-flex justify-content-between py-1">
                                     <Segment style={{ fontSize: "14px", fontWeight: 700 }}>Total</Segment>
@@ -115,9 +126,10 @@ const DetailCar = (props) => {
                         </Col>
                 </Row>
 
-                </Segment>
+                </Segment>}
                         
                 </Segment>
+                    
     )
 }
 
